@@ -11,7 +11,7 @@ function App() {
   const [searchedCountries, setSearchedCountries] = useState([])
 
   useEffect(() => {
-    fetch('https://countries-search-data-prod-812920491762.asia-south1.run.app/countries').then((data) => data.json()).then((data) => setCountries(data))
+    fetch('https://countries-search-data-prod-812920491762.asia-south1.run.app/countries').then((data) => data.json()).then((data) => setCountries(data)).catch((error) => console.error("Error while fetching the data : ",error))
   }, [])
 
   const handlingSearch = (name) => {
