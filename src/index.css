@@ -1,0 +1,10 @@
+.header {
+  /* border: 1px solid black; */
+  background-color: gainsboro;
+  padding: 8px
+}
+
+.header input {
+  height: 24px;
+  width: 60vw;
+}
